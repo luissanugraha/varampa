@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget id="com.jejelabel.varampa" version="1.0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+	<name>varampa</name>
+	<description>alpha testing</description>
+	<author href="https://idzax.com" email="casualulie@gmail.com">jejelabel</author>
+	<content src="index.html"/>
+	<icon src="icon-256.png" width="256" height="256" density="xxxhdpi" />
+	<icon src="icon-128.png" width="128" height="128" density="xhdpi" />
+
+	<platform name="android">
+		<allow-intent href="market:*/" />
+		<allow-intent href="http://*/*" />
+		<allow-intent href="https://*/*" />
+		<allow-intent href="tel:*" />
+		<allow-intent href="sms:*" />
+		<allow-intent href="mailto:*" />
+		<allow-intent href="geo:*" />
+		<preference name="enabled" value="true" />
+		<preference name="deployment-target" value="10.0" />
+		<preference name="android-minSdkVersion" value="21" />
+		<preference name="android-targetSdkVersion" value="26" />
+	</platform>
+		
+	<preference name="phonegap-version" value="cli-9.0.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="AllowInlineMediaPlayback" value="true" />
+	
+	<access origin="*" />
+	<plugin name="cordova-plugin-inappbrowser" />
+	<plugin name="cordova-custom-config" />
+	<plugin name="cordova-plugin-file" />
+	<plugin name="cordova-plugin-statusbar" />
+	<plugin name="cordova-plugin-whitelist" />
+	<plugin name="cordova-plugin-wkwebview-engine" />
+	<plugin name="cordova-plugin-admobpro" source="npm">
+		<variable name="ADMOB_APP_ID" value="ca-app-pub-9962237383060127~8195704857" />
+		<variable name="PLAY_SERVICES_VERSION" value="16.0.0" />
+	</plugin>
+</widget>
